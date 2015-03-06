@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Scott's Blog</title>
+        
+        <link type="text/css" rel="stylesheet" href="static/css/style.css">
+
+    </head>
+    
+    <body>
+        <div class="header">
+            <p>Welcome to Scott's Blog!</p>
+        </div>
+        <hr>
+        {% for entry in query %}
+        <div class="title">
+            <p>{{entry.title}}</p>
+        </div>
+        <div class="content">
+            <p>{{entry.content}}</p>
+            <p class="dateposted">Posted on: {{entry.datetime}}</p.dateposted>
+        </div>
+        <hr>
+        {% endfor %}
+		<div class = "footer">
+			<p>Queried {{seconds}} seconds ago</p>
+		</div>
+    </body>
+    
+</html>

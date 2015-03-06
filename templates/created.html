@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Scott's Blog</title>
+        
+        <style type="text/css">
+            body {
+                font-family:Helvetica, Arial, sans-serif;
+                font-size:100%;
+                text-align:center;
+                margin-left:auto;
+                margin-right:auto;
+                width:800px;
+            }
+            
+            .header {
+                background-color: #E8E8E8;
+                color: 	#505050;
+                padding-top:2px;
+                padding-bottom:2px;
+                font-weight:bolder;
+                font-size:2em;
+            }
+            
+            .title {
+                font-weight:bold;
+                font-size:1.1em;
+                text-align:center;
+                align-content:center;
+            }
+			
+            .footer {
+				text-align:right;
+				font-size: .75em;
+            }
+            .content {
+                text-align:center;
+                align-content:center;
+            }
+            
+            .dateposted {
+                font-size:.75em;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="header">
+            <p>Welcome to Scott's Blog!</p>
+        </div>
+        <hr>
+        <div class="title">
+            <p>{{title}}</p>
+        </div>
+        <div class="content">
+            <p>{{content}}</p>
+        </div>
+		<div class = "footer">
+			<p>Queried {{seconds}} seconds ago</p>
+		</div>
+    </body>
+    
+</html>
